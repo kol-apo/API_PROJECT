@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #6ab0ff;
+    --text-color: #333;
+    --background-color: #f4f7f6;
+    --card-background: #ffffff;
+    --border-radius: 10px;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.weather-container {
+    text-align: center;
+    background: var(--card-background);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.temperature-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.temperature-section img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.details {
+    margin-top: 20px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.details p {
+    margin: 5px 0;
+}
