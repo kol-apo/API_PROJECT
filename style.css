@@ -1,3 +1,4 @@
+/* General Reset */
 :root {
     --primary-color: #4a90e2;
     --secondary-color: #6ab0ff;
@@ -14,33 +15,78 @@
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+    height: 100vh; /* Full height of the viewport */
     margin: 0;
+    padding: 20px; /* Add padding around the content */
 }
 
+/* Header Styling */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 2.5rem;
+    padding: 20px;
+    width: 100%; /* Full width */
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px; /* Increased bottom margin */
+}
+
+/* Styles for "Why" Section */
+.why {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin: 20px 0 30px; /* Add spacing above and below */
+    text-align: center;
+}
+
+/* Styles for "Structure" Section */
+.structure {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin: 30px 0; /* Increased spacing for clarity */
+    text-align: center;
+}
+
+/* Styles for "Program" Section */
+.program {
+    font-size: 1rem;
+    line-height: 1.8; /* Increased line height for readability */
+    color: #555;
+    margin: 20px auto 40px; /* Add spacing above and below */
+    text-align: left;
+    max-width: 800px;
+}
+
+/* Weather Container */
 .weather-container {
     text-align: center;
     background: var(--card-background);
-    padding: 20px;
+    padding: 25px; /* Slightly increased padding */
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     max-width: 400px;
     width: 100%;
+    margin-top: 30px; /* Spacing from other content */
 }
 
+/* Weather Heading */
 h1 {
     font-size: 2rem;
     color: var(--primary-color);
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Increased margin below */
 }
 
+/* Temperature Section */
 .temperature-section {
     display: flex;
     justify-content: center;
@@ -51,7 +97,7 @@ h1 {
 .temperature-section img {
     width: 80px;
     height: 80px;
-    margin-right: 10px;
+    margin-right: 15px; /* Increased space between icon and text */
 }
 
 h2 {
@@ -60,18 +106,37 @@ h2 {
     margin: 0;
 }
 
+/* Paragraphs */
 p {
     font-size: 1rem;
-    margin: 5px 0;
+    margin: 10px 0; /* Add consistent spacing between paragraphs */
 }
 
+/* Weather Details */
 .details {
-    margin-top: 20px;
+    margin-top: 30px; /* Increased spacing from other elements */
     text-align: left;
     border-top: 1px solid #ddd;
-    padding-top: 10px;
+    padding-top: 15px; /* Added padding above details */
 }
 
 .details p {
-    margin: 5px 0;
+    margin: 8px 0; /* Added spacing between detail lines */
+}
+
+/* Button Styling */
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 12px 25px; /* Slightly increased button size */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #5a9be5; /* Slightly darker blue */
 }
