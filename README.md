@@ -16,28 +16,16 @@ Frontend: HTML, CSS, JavaScript
 API: OpenWeatherMap API
 Hosting: Deployed using a Web server with load balancer support.
 Dependencies: Include any libraries or tools like fetch, custom fonts, etc.
-4. Getting Started
-4.1 Prerequisites
-A modern web browser (e.g., Chrome, Firefox).
-An API key from OpenWeatherMap.
-4.2 Installation Instructions
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/yourusername/weatherwise.git
-cd weatherwise
-Open the index.html file in a browser to view the app.
-(Optional) Host it on a web server like Apache, NGINX, or a cloud platform.
-4.3 Deployment Instructions
+4. Deployment Instructions
 Set up a server environment.
 Use a load balancer to distribute traffic for scalability.
 Ensure the API key is stored securely in environment variables.
 5. Usage
 Open the app in your browser.
-Enter a city name in the search bar to view the weather details.
+Uses your current location to view the weather details.
 Use the location button to fetch weather data based on your GPS.
 7. Credits
-Developer: Your Name
+Developer: Olubanjo Kolapo
 API: OpenWeatherMap
 Icons: OpenWeatherMap Weather Icons
 Fonts: Google Fonts (Poppins)
